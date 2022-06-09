@@ -10,5 +10,5 @@ def test_button_add_to_basket_exist(browser):
     """
     browser.get(link)
 
-    assert browser.find_element(By.CSS_SELECTOR, "button.btn-add-to-basket"),\
+    assert len(browser.find_elements(By.CSS_SELECTOR, "button.btn-add-to-baske")) > 0,\
         "Button 'add-to-basket' does not exist"
